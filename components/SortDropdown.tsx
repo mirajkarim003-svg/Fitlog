@@ -26,7 +26,11 @@ export default function SortDropdown({
           className="appearance-none bg-transparent pr-5 font-semibold text-ink focus:outline-none"
         >
           {OPTIONS.map((opt) => (
-            <option key={opt.key} value={opt.key} className="bg-surface text-ink">
+            <option
+              key={opt.key}
+              value={opt.key}
+              className="bg-surface text-ink"
+            >
               {opt.label}
             </option>
           ))}

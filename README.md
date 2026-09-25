@@ -1,51 +1,21 @@
-# FitLog — Workout Library
+# FitLog — Gym Companion & Workout Library
 
-A dark, no-nonsense gym companion. Browse a library of lifts, open a workout to
-see full instructions and stats, then lock it into today's plan or save it for
-later — all tracked live in the navbar.
+FitLog is a dark, no-nonsense gym companion web application built with Next.js. It allows fitness enthusiasts to browse a comprehensive workout library, manage daily workout plans, and track their fitness goals seamlessly.
 
-## Technologies used
+## 🚀 Live Demo
+- **Live URL:** [Add your deployed link here]
+- **GitHub Repository:** [Add your repository link here]
 
-- **Next.js 14** (App Router) — routing, layouts, client components
-- **TypeScript** — typed components, context and API layer
-- **Tailwind CSS** — styling and responsive layout
-- **lucide-react** — icon set
-- **Workout data** served from `https://api.abcz.workers.dev/api/fitlog`
+## 🛠️ Technologies Used
+- **Framework:** Next.js (App Router)
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
+- **Language:** TypeScript / JavaScript
 
-## Features
-
-1. **Responsive workout library** — a 3‑column grid on desktop that collapses
-   to 2 and then 1 column on tablet/mobile, with sort (Duration / Calories /
-   Rating) and a name/tag search.
-2. **Workout detail pages** — dynamic route per lift with specs table,
-   step‑by‑step instructions, and Add to Plan / Save for Later actions.
-3. **Live navbar badges** — "Plan" and "Saved" pill counters update instantly
-   and link straight to `/my-plan`.
-4. **My Plan dashboard** — Exercises / Minutes / Calories summary, Today's
-   Plan vs Saved tabs, mark‑as‑done, remove, and a 5‑lift daily cap.
-5. **Persistent state & polish** — plan/saved data is stored in
-   `localStorage` so it survives a reload, with toast notifications, loading
-   states, and a themed 404 page for unknown routes.
-
-## Getting started
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-```bash
-npm run build
-npm run start
-```
-
-## Project structure
-
-```
-app/                 routes (home, workout/[id], my-plan, not-found)
-components/           Navbar, Hero, Footer, WorkoutCard, SortDropdown
-context/AppContext.tsx  workout data, plan/saved state, toasts
-lib/                  API helper + shared types
-```
+## ✨ Key Features
+1. **Interactive Workout Library:** Browse a 3x4 responsive grid of workouts categorized by muscle groups with detailed stats (duration, calories, rating).
+2. **Dynamic Search & Sort:** Easily filter or sort workouts by duration, calories, or rating.
+3. **Workout Detail View:** Comprehensive multi-column detail pages featuring equipment lists, difficulty levels, step-by-step instructions, and key specs.
+4. **Today's Plan & Saved Management:** Add up to 5 lifts to your daily plan, mark workouts as done, remove items, and save workouts for later with real-time counters and toast notifications.
+5. **Local Storage Persistence:** Keeps your planned and saved workouts persistent even after page reloads.
+6. **Fully Responsive Design:** Seamlessly optimized for mobile, tablet, and desktop viewports.

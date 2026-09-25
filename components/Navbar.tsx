@@ -18,7 +18,11 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-line bg-canvas/90 backdrop-blur">
       <div className="mx-auto flex max-w-content items-center justify-between px-5 py-4 sm:px-8">
         <Link href="/" className="flex items-center gap-2">
-          <Dumbbell className="h-5 w-5 text-accent" strokeWidth={2.5} />
+          <img
+            src="/logo.png"
+            alt="FitLog Logo"
+            className="h-8 w-auto object-contain"
+          />
           <span className="font-display text-xl font-bold tracking-wide text-ink">
             FITLOG
           </span>
@@ -70,7 +74,9 @@ export default function Navbar() {
       <nav className="flex items-center gap-6 border-t border-line px-5 py-2.5 md:hidden">
         {links.map((link) => {
           const active =
-            link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+            link.href === "/"
+              ? pathname === "/"
+              : pathname.startsWith(link.href);
           return (
             <Link
               key={link.href}

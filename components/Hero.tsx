@@ -27,11 +27,11 @@ export default function Hero() {
 
         <div className="relative mx-auto h-56 w-full max-w-sm sm:h-72 md:h-80">
           <Image
-            src="https://img.magnific.com/free-photo/portrait-anime-character-doing-fitness-exercising_23-2151666664.jpg?w=740"
+            src="/banner.png"
             alt="Illustrated character mid-lift"
             fill
-            sizes="(max-width: 768px) 90vw, 380px"
-            className="rounded-xl object-cover"
+            sizes="(max-width: 768px) 90vw, 400px"
+            className="w-full h-full object-contain max-h-[400px]"
             priority
           />
         </div>

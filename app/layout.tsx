@@ -4,6 +4,8 @@ import "./globals.css";
 import { AppProvider } from "@/context/AppContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -38,6 +40,15 @@ export default function RootLayout({
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
+
+          <ToastContainer
+            position="top-right"
+            autoClose={2800}
+            newestOnTop
+            closeOnClick
+            pauseOnHover
+            theme="dark"
+          />
         </AppProvider>
       </body>
     </html>
